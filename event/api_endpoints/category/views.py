@@ -2,8 +2,6 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
 from account.permissions import IsAdminUserRole
-from django.shortcuts import get_object_or_404
-from rest_framework.permissions import IsAdminUser
 from drf_yasg.utils import swagger_auto_schema
 
 from event.api_endpoints.category.serializer import CategorySerializer, SubCategorySerializer
