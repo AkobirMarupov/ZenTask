@@ -25,13 +25,9 @@ ALLOWED_HOSTS = []
 
 AUTH_USER_MODEL = 'account.User'
 
-
-ASGI_APPLICATION = "conversation.asgi.application"
-
 # Application definition
 
 DJANGO_APPS = [
-    'daphne',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -45,7 +41,6 @@ LOCAL_APPS = [
     'common',
     'event',
     'vacancies',
-    'conversation'
 ]
 
 EXTERNAL_APPS = [

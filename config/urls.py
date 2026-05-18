@@ -33,7 +33,7 @@ urlpatterns = [
 
     path('account/', include('account.urls')),
     path('', include('event.urls')),
-    path('', include('vacancies.urls'))
+    path('', include('vacancies.urls')),
 ]
 
 
