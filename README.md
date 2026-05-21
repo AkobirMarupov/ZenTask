@@ -17,7 +17,7 @@
 
 ## 📌 Loyiha haqida
 
-**EduPlatform** — bu ta'lim olish, kurslarni boshqarish va ish topishni birlashtiradigan backend tizimi. Real-vaqt rejimidagi chat, vakansiyalar markazi va kurs boshqaruvi bir platformada jamlangan.
+**EduPlatform** — bu ta'lim olish, kurslarni boshqarish va ish topishni birlashtiradigan backend tizimi. Vakansiyalar markazi va kurs boshqaruvi bir platformada jamlangan.
 
 ---
 

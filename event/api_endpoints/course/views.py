@@ -153,6 +153,7 @@ class LessonDetailAPIView(APIView):
 class EnrolledCoursesAPIView(APIView):
     permission_classes = [IsAuthenticated]
 
+    @swagger_auto_schema(tags=['enrolment'])
     def get(self, request):
         enrollments = Enrollment.objects.filter(user=request.user).select_related('course')
         

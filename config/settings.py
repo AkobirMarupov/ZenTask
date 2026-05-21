@@ -41,6 +41,7 @@ LOCAL_APPS = [
     'common',
     'event',
     'vacancies',
+    'admin_page'
 ]
 
 EXTERNAL_APPS = [
@@ -226,3 +227,18 @@ JAZZMIN_UI_TWEAKS = {
         "success": "btn-success"
     }
 }
+
+#_______________________________
+
+CACHES = {
+    "default": {
+        "BACKEND": "django.core.cache.backends.locmem.LocMemCache",
+        # Redis uchun:
+        # "BACKEND": "django.core.cache.backends.redis.RedisCache",
+        # "LOCATION": "redis://127.0.0.1:6379/1",
+    }
+}
+
+ESKIZ_EMAIL    = os.getenv("ESKIZ_EMAIL")
+ESKIZ_PASSWORD = os.getenv("ESKIZ_PASSWORD")
+ESKIZ_SENDER   = os.getenv("ESKIZ_SENDER")

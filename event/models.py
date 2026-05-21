@@ -63,7 +63,7 @@ class Lesson(BaseModel):
     is_preview = models.BooleanField(default=False) 
 
     def __str__(self):
-        return f"{self.course.title} - {self.title}"
+        return f"{self.course.name} - {self.title}"
 
 
 class Enrollment(models.Model):
