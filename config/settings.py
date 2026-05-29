@@ -9,7 +9,15 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
+from django.core.wsgi import get_wsgi_application
 
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'config.settings')
+
+# Avtomatik migrate
+from django.core.management import call_command
+call_command('migrate', '--run-syncdb')
+
+application = get_wsgi_application()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
