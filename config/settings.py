@@ -48,15 +48,15 @@ LOCAL_APPS = [
 ]
 
 EXTERNAL_APPS = [
+    'jazzmin',
     'rest_framework',
     'rest_framework.authtoken',
     'rest_framework_simplejwt',
     'drf_yasg',
-    'jazzmin'
 ]
 
 
-INSTALLED_APPS = LOCAL_APPS + EXTERNAL_APPS + DJANGO_APPS
+INSTALLED_APPS = DJANGO_APPS + EXTERNAL_APPS + LOCAL_APPS
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
